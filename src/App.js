@@ -1,5 +1,5 @@
 import './App.css';
-import StyledButton from './components/Button/Button';
+import StyledButton, { FancyButton } from './components/Button/Button';
 function App() {
   return (
     <div className="App">
@@ -7,6 +7,10 @@ function App() {
       <br/>
       <br/>
       <StyledButton variant="stroke">I am the button</StyledButton>
+      <br/>
+      <br/>
+      {/* Polmorphic props using the "as" prop */}
+      <FancyButton as="a">Click me stupid</FancyButton>
     </div>
   );
 }

@@ -7,3 +7,7 @@ export const StyledButton = styled.button`
   width: 200px;
   height: 50px;
 `
+export const FancyButton = styled(StyledButton)`
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+  border: none;
+`
