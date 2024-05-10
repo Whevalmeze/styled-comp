@@ -17,3 +17,11 @@ export const FancyButton = styled(StyledButton)`
   background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
   border: none;
 `
+export const SubmitButton = styled(StyledButton).attrs(
+  {
+    type: "submit"
+  }
+)`
+  background-color: ${({variant}) => variant == "stroke" ? "#fff" : "red"};
+  color: ${({variant}) => variant == "stroke" ? "red" : "#fff"};
+`
