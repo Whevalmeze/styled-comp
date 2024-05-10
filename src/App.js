@@ -1,9 +1,12 @@
 import './App.css';
-import { StyledButton } from './components/Button/Button';
+import StyledButton from './components/Button/Button';
 function App() {
   return (
     <div className="App">
-      <StyledButton />
+      <StyledButton>I am the button</StyledButton>
+      <br/>
+      <br/>
+      <StyledButton variant="stroke">I am the button</StyledButton>
     </div>
   );
 }
