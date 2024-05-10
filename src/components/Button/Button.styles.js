@@ -25,6 +25,11 @@ export const SubmitButton = styled(StyledButton).attrs(
   background-color: ${({variant}) => variant == "stroke" ? "#fff" : "red"};
   color: ${({variant}) => variant == "stroke" ? "red" : "#fff"};
 `
+export const Darkbutton = styled(StyledButton)`
+  background-color: ${props => props.theme.dark.primary};
+  color: ${props => props.theme.dark.text};
+`
+
 const rotate = keyframes`
   from {
     transform: rotate(0deg);
