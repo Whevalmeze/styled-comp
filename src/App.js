@@ -1,8 +1,9 @@
 import './App.css';
-import StyledButton, { FancyButton, SubmitButton } from './components/Button/Button';
+import StyledButton, { FancyButton, Spinner, SubmitButton } from './components/Button/Button';
 function App() {
   return (
     <div className="App">
+      <Spinner src='./logo192.png' />
       <StyledButton>I am the button</StyledButton>
       <br/>
       <br/>

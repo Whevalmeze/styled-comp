@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
 export const StyledButton = styled.button`
   border-radius: 20px;
@@ -24,4 +24,15 @@ export const SubmitButton = styled(StyledButton).attrs(
 )`
   background-color: ${({variant}) => variant == "stroke" ? "#fff" : "red"};
   color: ${({variant}) => variant == "stroke" ? "red" : "#fff"};
+`
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+`
+export const Spinner = styled.img`
+  animation: ${rotate} infinite 20s linear;
+  pointer-events: none;
 `
